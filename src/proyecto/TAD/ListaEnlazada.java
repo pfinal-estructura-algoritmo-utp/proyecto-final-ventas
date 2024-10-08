@@ -59,18 +59,22 @@ public class ListaEnlazada<T> {
             System.out.println("La lista está vacía, no se puede eliminar.");
         }
     }
+    
+    public Nodo<T> obtenerValor(){
+        return this.cabeza;
+    }
 
     // Método para mostrar los elementos de la lista
-    public void mostrar() {
-        if (estaVacia()) {
-            System.out.println("La lista está vacía.");
-        } else {
-            Nodo<T> actual = cabeza;
-            while (actual != null) {
-                System.out.print(actual.dato + " -> ");
-                actual = actual.siguiente;
-            }
-            System.out.println("null");
-        }
-    }
+//    public void mostrar() {
+//        if (estaVacia()) {
+//            System.out.println("La lista está vacía.");
+//        } else {
+//            Nodo<T> actual = cabeza;
+//            while (actual != null) {
+//                System.out.print(actual.dato + " -> ");
+//                actual = actual.siguiente;
+//            }
+//            System.out.println("null");
+//        }
+//    }
 }

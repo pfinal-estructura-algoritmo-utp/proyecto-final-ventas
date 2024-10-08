@@ -12,6 +12,8 @@ public class Empleado extends Persona {
     private int empleadoId;
     private String codigo;
     private double sueldo;
+    
+    
 
     public Empleado(String cod, String nom, String ape){
         super(nom, ape);
